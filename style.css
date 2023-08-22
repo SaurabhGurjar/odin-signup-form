@@ -1,7 +1,7 @@
 :root {
     --primary-color: #ffffff;
     --secondary-color: #000000;
-    --content-padding: 20px 100px;
+    --content-padding-left: 100px;
 }
 
 @font-face {
@@ -64,7 +64,7 @@ img + h3 {
     font-size: 0.8em;
 }
 
-.logo-wrapper + p > a {
+a {
     text-decoration: none;
     color: var(--primary-color);
 }
@@ -74,13 +74,28 @@ img + h3 {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-   
+    gap: 40px;
+    background-color: rgba(229, 231, 235, 0.3);
+}
+
+.text-section {
+    padding-left: var(--content-padding-left);
+}
+
+.text-section > p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.text-section > p + p {
+    margin-top: 30px;
 }
 
 .form-feilds-wrapper {
     width: 100%;
-    padding: var(--content-padding);
+    padding: 20px var(--content-padding-left);
     box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-color);
 }
 
 form {
@@ -124,4 +139,26 @@ input[type="password"]:invalid {
 input:focus {
     border-color: blue;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-button-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding: 40px var(--content-padding-left);
+    align-items: center;
+    gap: 40px;
+}
+
+.form-button-wrapper > input {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 15em;
+    font-size: 18px;
+}
+
+input[type="submit"] +  p > a{
+    color: var(--secondary-color);
+    font-weight: 700;
+    padding-left: 4px;
 }
