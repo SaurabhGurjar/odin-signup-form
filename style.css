@@ -114,8 +114,16 @@ fieldset {
 }
 
 fieldset > div {
+    position: relative;
     display: flex;
     flex-direction: column;
+}
+
+.show-error {
+    position: absolute;
+    font-size: 14px;
+    top: 55px;
+    color: red;
 }
 
 label {
@@ -162,3 +170,4 @@ input[type="submit"] +  p > a{
     font-weight: 700;
     padding-left: 4px;
 }
+

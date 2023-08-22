@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -47,17 +48,18 @@
                         </div>
                         <div>
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" minlength="10" maxlength="10">
                         </div>
                     </fieldset>
                     <fieldset>
                         <div>
                             <label for="pwd">PASSWORD</label>
-                            <input type="password" name="password" id="pwd" required>
+                            <input type="password" name="password" id="pwd" minlength="8" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" required>
                         </div>
                         <div>
                             <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                            <input type="password" name="confirm-password" id="confirm-pwd" required>
+                            <input type="password" name="confirm-password" id="confirm-pwd" minlength="8" required>
+                            <div class="show-error"></div>
                         </div>
                     </fieldset>
                 </div>
