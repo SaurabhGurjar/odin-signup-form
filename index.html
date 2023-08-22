@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="img-and-logo-wrapper">
         <div class="logo-wrapper">
             <img src="image/odin-lined.png" alt="logo">
+            <h3>ODIN</h3>
         </div>
+        <p>Photo by <a
+                href="https://unsplash.com/@oweni?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Howen</a>
+            on <a
+                href="https://unsplash.com/photos/81s4ryYuIh4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
     </div>
     <div class="form-container">
         <div class="text-section">
@@ -20,26 +27,38 @@
             <p>You know you want to.</p>
         </div>
         <div class="form-feilds-section">
-            <h4>Let's do this!</h4>
             <form>
                 <div class="form-feilds-wrapper">
+                    <h2>Let's do this!</h2>
                     <fieldset>
-                        <label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname" name="fname" placeholder="Thor" required>
-                        <label for="lname">LAST NAME</label>
-                        <input type="text" id="lname" name="lname" placeholder="Odinson" required>
+                        <div>
+                            <label for="fname">FIRST NAME</label>
+                            <input type="text" id="fname" name="fname" placeholder="Thor" required>
+                        </div>
+                        <div>
+                            <label for="lname">LAST NAME</label>
+                            <input type="text" id="lname" name="lname" placeholder="Odinson" required>
+                        </div>
                     </fieldset>
                     <fieldset>
-                        <label for="e-mail">EMAIL</label>
-                        <input type="email" id="e-mail" name="email" required placeholder="example@gmail.com">
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" id="phone" name="phone">
+                        <div>
+                            <label for="e-mail">EMAIL</label>
+                            <input type="email" id="e-mail" name="email" required placeholder="example@gmail.com">
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
                     </fieldset>
                     <fieldset>
-                        <label for="pwd">PASSWORD</label>
-                        <input type="password" name="password" id="pwd" required>
-                        <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm-password" id="confirm-pwd" required>
+                        <div>
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" name="password" id="pwd" required>
+                        </div>
+                        <div>
+                            <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm-password" id="confirm-pwd" required>
+                        </div>
                     </fieldset>
                 </div>
                 <div class="form-button-wrapper">
